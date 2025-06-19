@@ -90,7 +90,7 @@ export const LoginForm = () => {
           <Button
           className='w-full'
           onClick={signInWithEmail}
-          disabled={emailPending}
+          disabled={emailPending || email.length < 1}
           >Continue with Email</Button>
         </div>
       </CardContent>

@@ -67,7 +67,7 @@ function SuspenseVerifyRequest() {
 
 function VerifyRequest() {
     return (
-      <Suspense>
+      <Suspense fallback={<p>Loading....</p>}>
         <SuspenseVerifyRequest/>
       </Suspense>
     )
